@@ -1,11 +1,7 @@
 #!/bin/bash
-echo "update"
 sudo apt update
-echo "try to install curl"
 sudo apt -y install curl 
-echo "try to install git
 sudo apt -y install git 
-echo "try to install figlet
 sudo apt -y install figlet
 sudo apt update -y
 sudo apt upgrade -y
