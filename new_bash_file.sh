@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt update
-sudo apt install curl -y
-sudo apt install git -y
-sudo apt install figlet -y
+sudo apt -y install curl 
+sudo apt -y install git 
+sudo apt -y install figlet
 sudo apt update
 sudo apt upgrade
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
