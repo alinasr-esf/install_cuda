@@ -5,6 +5,8 @@ sudo apt update
 sudo apt install curl -y
 sudo apt -y install git 
 sudo apt -y install figlet
+sudo apt-get install sensors -y
+sudo apt install htop -y
 sudo apt update
 sudo apt upgrade 
 
@@ -21,11 +23,14 @@ sudo apt-get -y install cuda
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt-get update
-#sudo apt-get install ros-kinetic-desktop-full -y
 sudo apt install ros-noetic-desktop-full -y
-#echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
+
+#installing ZED sdk
+wget https://download.stereolabs.com/zedsdk/3.7/cu115/ubuntu20
+chmod +x ZED_SDK_Ubuntu18_v3.0.run
+./ZED_SDK_Ubuntu18_v3.0.run -- silent
