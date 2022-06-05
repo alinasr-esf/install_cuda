@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install curl -y
 sudo apt -y install git 
 sudo apt -y install figlet
-sudo apt-get install sensors -y
+sudo apt-get install lm-sensors -y
 sudo apt install htop -y
 sudo apt update
 sudo apt upgrade 
