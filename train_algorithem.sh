@@ -11,4 +11,4 @@ wget https://drive.google.com/file/d/1nArFobMVGVFR-f6x2BoR0vw9q2LVEWNX/view?usp=
 unzip dataset.zip
 #mv ....
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
