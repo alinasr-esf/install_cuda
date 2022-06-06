@@ -7,7 +7,7 @@ cd YoloV5_train
 #git clone https://github.com/ultralytics/yolov5
 cd yolov5
 pip install -r requirements.txt
-wget https://drive.google.com/file/d/1nArFobMVGVFR-f6x2BoR0vw9q2LVEWNX/view?usp=sharing
+#wget --load-cookies /tmp/cookies.txt "https://drive.google.com/uc?id=1nArFobMVGVFR-f6x2BoR0vw9q2LVEWNX&export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://drive.google.com/uc?id=1nArFobMVGVFR-f6x2BoR0vw9q2LVEWNX&export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O dataset.zip && rm -rf /tmp/cookies.txt
 unzip dataset.zip
 #mv ....
 sudo apt update
