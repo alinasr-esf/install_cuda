@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt update
 sudo apt-get install python3-pip python3-dev python3-virtualenv -y
+sudo apt-get install lm-sensors -y
+sudo apt install htop -y
 virtualenv --system-site-packages ~/YoloV5_train
 source ~/YoloV5_train/bin/activate
 cd YoloV5_train
